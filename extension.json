@@ -1,0 +1,18 @@
+{
+	"name": "OsmWikibase",
+	"author": [
+		"Yuri Astrakhan"
+	],
+	"descriptionmsg": "osmwikibase-desc",
+	"license-name": "MIT",
+	"AutoloadClasses": {
+		"OsmWikibase\\OsmItemId": "includes/OsmItemId.php",
+		"OsmWikibase\\Hooks": "includes/OsmWikibase.hooks.php"
+	},
+	"Hooks": {
+		"WikibaseRepoEntityTypes": [
+			"OsmWikibase\\Hooks::onWikibaseRepoEntityTypes"
+		]
+	},
+	"manifest_version": 1
+}
