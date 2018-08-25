@@ -12,7 +12,26 @@
 	"Hooks": {
 		"WikibaseRepoEntityTypes": [
 			"OsmWikibase\\Hooks::onWikibaseRepoEntityTypes"
+		],
+		"BeforePageDisplay": [
+			"OsmWikibase\\Hooks::onBeforePageDisplay"
 		]
 	},
-	"manifest_version": 1
+  "ResourceFileModulePaths": {
+	"localBasePath": "modules",
+	"remoteExtPath": "OsmWikibase/modules"
+  },
+	"ResourceModules": {
+		"ext.OsmWikibase-all": {
+			"styles": [
+				"AllPages.less"
+			]
+		},
+		"ext.OsmWikibase": {
+			"styles": [
+				"OsmWikibase.less"
+			]
+		}
+	},
+	"manifest_version": 2
 }
