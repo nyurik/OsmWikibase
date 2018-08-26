@@ -30,7 +30,13 @@
 		"ext.OsmWikibase": {
 			"styles": [
 				"OsmWikibase.less"
-			]
+			],
+			"skinStyles": {
+				"vector": "OsmWikibase-vector.less",
+				"cologneblue": "OsmWikibase-cologneblue.less",
+				"modern": "OsmWikibase-modern.less",
+				"monobook": "OsmWikibase-monobook.less"
+		  }
 		}
 	},
 	"manifest_version": 2

@@ -1,0 +1,16 @@
+/**
+ * CSS for styling OSM Wikibase page
+ *
+ * @file
+ * @author Yuri Astrakhan (YuriAstrakhan@gmail.com)
+ * @ingroup Extensions
+ */
+/* Wrap everything with the #mw-content-text to make it more specific.
+   This avoids having to add !important in many places */
+#mw-content-text {
+  .wikibase-entityview-side {
+	/* For some reason, local install looks better with top: -3rem, but OSM site is -2rem */
+	right: 0;
+	top: -2rem;
+  }
+}
