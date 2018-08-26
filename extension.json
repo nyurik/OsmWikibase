@@ -6,21 +6,17 @@
 	"descriptionmsg": "osmwikibase-desc",
 	"license-name": "MIT",
 	"AutoloadClasses": {
-		"OsmWikibase\\OsmItemId": "includes/OsmItemId.php",
 		"OsmWikibase\\Hooks": "includes/OsmWikibase.hooks.php"
 	},
 	"Hooks": {
-		"WikibaseRepoEntityTypes": [
-			"OsmWikibase\\Hooks::onWikibaseRepoEntityTypes"
-		],
 		"BeforePageDisplay": [
 			"OsmWikibase\\Hooks::onBeforePageDisplay"
 		]
 	},
-  "ResourceFileModulePaths": {
-	"localBasePath": "modules",
-	"remoteExtPath": "OsmWikibase/modules"
-  },
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "OsmWikibase/modules"
+	},
 	"ResourceModules": {
 		"ext.OsmWikibase-all": {
 			"styles": [
