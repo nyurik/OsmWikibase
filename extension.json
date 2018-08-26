@@ -13,14 +13,17 @@
 		"WikibaseRepoEntityTypes": [
 			"OsmWikibase\\Hooks::onWikibaseRepoEntityTypes"
 		],
+		"WikibaseClientEntityTypes": [
+			"OsmWikibase\\Hooks::onWikibaseRepoEntityTypes"
+		],
 		"BeforePageDisplay": [
 			"OsmWikibase\\Hooks::onBeforePageDisplay"
 		]
 	},
-  "ResourceFileModulePaths": {
-	"localBasePath": "modules",
-	"remoteExtPath": "OsmWikibase/modules"
-  },
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "OsmWikibase/modules"
+	},
 	"ResourceModules": {
 		"ext.OsmWikibase-all": {
 			"styles": [
