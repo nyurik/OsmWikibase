@@ -7,7 +7,7 @@ See [OSM Wikibase project page](https://wiki.openstreetmap.org/wiki/OpenStreetMa
 -  Style sitelink section to only show "other" section without the header and the edit links at at the top right, adjusted for multiple skins
 
 # Custom Item Prefixes Notes
-The code in this repo will only customize the "repo" (storage) portion of the Wikibase, allowing Wikibase Items to start with a 'Y' instead of 'X'. PRs are welcome to make it parametrizable.  This code will NOT work for the sitelinks, because as of this moment (2018-08-27), Wikibase in many places still relies on the old method of the ID parsing.  See [my patch in gerrit](https://gerrit.wikimedia.org/r/#/c/mediawiki/extensions/Wikibase/+/455480/) to fix it.
+The code in this repo will only customize the "repo" (storage) portion of the Wikibase, allowing Wikibase Items to start with a 'Y' instead of 'Q'. PRs are welcome to make it parametrizable.  This code will NOT work for the sitelinks, because as of this moment (2018-08-27), Wikibase in many places still relies on the old method of the ID parsing.  See [my patch in gerrit](https://gerrit.wikimedia.org/r/#/c/mediawiki/extensions/Wikibase/+/455480/) to fix it.
 
 If you want to update your existing site to use a different prefix, run these queries. Depending on what extensions you have, you may have a few more tables, and possibly a slightly different table structure... danger zone, must have good backup, and be willing to break things:
 
