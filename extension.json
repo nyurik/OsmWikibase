@@ -6,6 +6,7 @@
 	"descriptionmsg": "osmwikibase-desc",
 	"license-name": "MIT",
 	"AutoloadClasses": {
+		"OsmWikibase\\OsmSite": "includes/OsmSite.php",
 		"OsmWikibase\\Hooks": "includes/OsmWikibase.hooks.php"
 	},
 	"Hooks": {
@@ -35,5 +36,6 @@
 		  }
 		}
 	},
+	"callback": "OsmWikibase\\Hooks::onRegistration",
 	"manifest_version": 2
 }

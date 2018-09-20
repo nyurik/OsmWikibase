@@ -11,6 +11,11 @@ namespace OsmWikibase;
 
 class Hooks
 {
+	public static function onRegistration() {
+		global $wgSiteTypes;
+		$wgSiteTypes['osm'] = OsmSite::class;
+	}
+
 	/**
 	 * Adds CSS to customize Wikibase display
 	 * @param \OutputPage &$out
