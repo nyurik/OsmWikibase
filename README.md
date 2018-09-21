@@ -15,6 +15,8 @@ This turned out to be much more difficult than anticipated. The work has been mo
 To customize site link normalization, use `OsmWikibase\OsmSite` instead of `Site` object. This code assumes you want `wiki` as the site ID.
 
 ```php
+.../mediawki$ php maintenance/shell.php
+>>>
   $site = new OsmWikibase\OsmSite();
   $site->setGlobalId( 'wiki' );
   $site->setGroup( 'osm' );
