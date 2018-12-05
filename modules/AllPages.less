@@ -12,3 +12,11 @@
 #p-lang, .wb-langlinks-add {
   display: none;
 }
+/* Proper positioning of the edit pencil icon to be right after previous
+ element, without breaks, and vertically aligned on baseline */
+.wb-edit-pencil:before {
+    content: '\a0';
+}
+.wb-edit-pencil {
+    vertical-align: baseline;
+}
