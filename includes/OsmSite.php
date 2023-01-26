@@ -40,7 +40,9 @@ class OsmSite extends Site {
 		parent::__construct( $type );
 	}
 
-	public function normalizePageName( $pageName ) {
+	// FIXME: Blindly adding $followRedirect to make OsmSite::normalizePageName() compatible with Site normalizePageName()
+	// This is a hack, and should be fixed properly.
+	public function normalizePageName( $pageName, $followRedirect = MediaWikiPageNameNormalizer::FOLLOW_REDIRECT  ) {
 		return Title::newFromText( $pageName )->getPrefixedText();
 	}
 
