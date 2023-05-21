@@ -26,6 +26,7 @@
 
 namespace OsmWikibase;
 
+use MediaWiki\Site\MediaWikiPageNameNormalizer;
 use Site;
 use Title;
 
