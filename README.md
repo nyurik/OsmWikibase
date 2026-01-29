@@ -9,7 +9,7 @@ MediaWiki extension to customize the Wikibase on OSM Wiki.
 ### Work in progress
 -  Overrides default ItemId to use `Y` instead of `Q` prefix
 
-This turned out to be much more difficult than anticipated. The work has been moved to the `customPrefix` branch.  The proposed solution works for creating and editing items, but it breaks when a sitelink needs to be resolved into a Wikibase ID. 
+This turned out to be much more difficult than anticipated. The work has been moved to the `customPrefix` branch.  The proposed solution works for creating and editing items, but it breaks when a sitelink needs to be resolved into a Wikibase ID.
 
 ### Custom Site object
 To customize site link normalization, use `OsmWikibase\OsmSite` instead of `Site` object. This code assumes you want `wiki` as the site ID.
@@ -21,8 +21,8 @@ To customize site link normalization, use `OsmWikibase\OsmSite` instead of `Site
   $site->setGlobalId( 'wiki' );
   $site->setGroup( 'osm' );
   $site->setPath( Site::PATH_LINK, "https://wiki.openstreetmap.org/wiki/$1" );
-  
-  // If updating, make sure to keep internal ID  
+
+  // If updating, make sure to keep internal ID
   $store = SiteSQLStore::newInstance();
   $oldSite = $store->getSite( $site->getGlobalId() );
   if ( $oldSite ) $site->setInternalId( $oldSite->getInternalId() );
