@@ -41,13 +41,13 @@ class OsmSite extends Site {
 		parent::__construct( $type );
 	}
 
-	// Force English as the language code for OSM wikis
+	// Force English as the language code for OSM wikis if not set.
 	// For some reason setting 'en' in the constructor does not work,
 	// probably due to APCU cache deserialization order.
 	// Without this, this code assumes it is not NULL:
 	//    extensions/Wikibase/repo/includes/Specials/SpecialItemByTitle.php:194
 	public function getLanguageCode() {
-		return 'en';
+		return parent::getLanguageCode() ?? 'en';
 	}
 
 	// FIXME: Blindly adding $followRedirect to make OsmSite::normalizePageName() compatible with Site normalizePageName()
