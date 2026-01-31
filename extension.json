@@ -3,6 +3,7 @@
 	"author": [
 		"Yuri Astrakhan"
 	],
+    "url": "https://github.com/nyurik/OsmWikibase",
 	"descriptionmsg": "osmwikibase-desc",
 	"license-name": "MIT",
 	"AutoloadClasses": {
