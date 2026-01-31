@@ -14,6 +14,11 @@
 			"OsmWikibase\\Hooks::onBeforePageDisplay"
 		]
 	},
+    "MessagesDirs": {
+        "OsmWikibase": [
+            "i18n"
+        ]
+    },
 	"ResourceFileModulePaths": {
 		"localBasePath": "modules",
 		"remoteExtPath": "OsmWikibase/modules"
