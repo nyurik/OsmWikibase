@@ -27,7 +27,7 @@
 namespace OsmWikibase;
 
 use MediaWiki\Site\MediaWikiPageNameNormalizer;
-use Site;
+use MediaWiki\Site\MediaWikiSite;
 use Title;
 
 /**
@@ -35,7 +35,7 @@ use Title;
  *
  * @ingroup Site
  */
-class OsmSite extends Site {
+class OsmSite extends MediaWikiSite {
 
 	public function __construct( $type = 'osm' ) {
 		parent::__construct( $type );
@@ -58,8 +58,8 @@ class OsmSite extends Site {
 
 	public function getPageUrl( $pageName = false ) {
 		if ( $pageName !== false ) {
-			// Use dbkey-style URL
-			$pageName = str_replace( ' ', '_', trim( $pageName ) );
+			// Use "db key"-style URL
+			$pageName = parent::toDBKey( trim( $pageName ) );
 		}
 
 		return parent::getPageUrl( $pageName );
